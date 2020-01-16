@@ -1,0 +1,147 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+    .projects {
+
+    }
+
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+    html {
+        font-size: 15px;
+    }
+    .sectionTitle {
+        h2{
+           // font-size: 1.5rem;
+        }
+        p {
+           // font-size: 1rem;
+        }
+    }
+
+    .header__logotype {
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .cover {
+        &__content {
+           // max-width: 70vw;
+        }
+        &__title {
+           // font-size: 2rem;
+        }
+        p {
+           // font-size: 1.2rem;
+        }
+    }
+
+    .projects {
+        &__wrap {
+
+        }
+    }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+    html {
+        font-size: 14px;
+    }
+    .header {
+        &__logotype {
+            position: static;
+            text-align: center;
+        }
+    }
+
+    .cover {
+        top: 0;
+        margin-top: 200px;
+        &__title {
+            text-align: center;
+           // font-size: 1.8rem;
+        }
+        p {
+            text-align: center;
+        }
+        &__actions {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .button {
+            margin-top: 20px;
+        }
+    }
+
+    .services {
+        .container {
+           max-width: 100%;
+        }
+        .service {
+            &__header {
+               // font-size: .8rem;
+            }
+            &__title {
+              //  font-size: 1rem;
+            }
+            &__description {
+               // font-size: .8rem;
+            }
+        }
+    }
+
+    .button {
+        //padding: 10px;
+        //font-size: 1rem;
+    }
+
+    .projects {
+        &__wrap {
+            max-width: 100%;
+        }
+    }
+
+    .contactModal__inputs {
+        flex-wrap: wrap;
+        input {
+            width: 100%;
+        }
+    }
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+    .cover {
+        margin-top: 100px;
+        &__title {
+            font-size: 2.8rem;
+        }
+    }
+    .service__header {
+        flex-direction: column;
+    }
+    .service__title {
+        text-align: center;
+    }
+    .service__add {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+    .contactModal__body {
+        padding: 25px;
+    }
+}
+
+
